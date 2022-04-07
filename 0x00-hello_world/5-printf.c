@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
+ * main - Main entry point for the program
+ * @void: The function does not accept any parameters
+ * Return: int returned as 0
+ */
 int main(void)
 {
-    printf("%s", "with proper grammar, but the outcome is a piece of art,\n");
+    printf("with proper grammar, but the outcome is a piece of art,\n");
     return (0);
 }
