@@ -1,15 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - alphabet in lowercase, followed by a new line.
+ * main - Entry point
  *
- * Always return(0)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-char ch = 'a';
-for (ch = 'a'; ch <= 'z'; ch++)
+char l = 'a';
+while (l <= 'z')
 {
-putchar(ch);
+putchar(l);
+l++;
 }
 putchar('\n');
 return (0);

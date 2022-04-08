@@ -1,39 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - prints a list of double didgits
+ * main -  a function that prints all unique combination two digits.
  *
- * Description: digits should not be repeated twice
- * Return: Always(0) Success
-*/
+ * Return: always zero.
+ */
 
 int main(void)
 {
-	int i, j;
+int i, j;
 
-	for (i = 48; i < 58; i++)
-	{
-		for (j = 48; j < 58; j++)
-		{
-			if (i == j)
-			{
-				continue;
-			}
-			putchar(i);
-			putchar(j);
-			if (i == 56 && j == 57)
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
+for (i = 48; i < 58; i++)
+{
+for (j = i; j < 58; j++)
+{
+if (i != j)
+{
+putchar(i);
+putchar(j);
+if (!(i == 56 && j == 57))
+{
+putchar(',');
+putchar(' ');
+}
+}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
 }
-

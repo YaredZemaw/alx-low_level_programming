@@ -1,15 +1,22 @@
 #include <stdio.h>
 
+/**
+ * main - a function to print the 10 digit of common numbers
+ *
+ * Return: always returns zero
+ */
+
 int main(void)
 {
-	int n = 48;
+	int a = '0';
 
-	while (n < 58)
+	while (a <= '9')
 	{
-		putchar(n);
-		n++;
+		putchar(a);
+		a++;
 	}
-	putchar ('\n');
+
+	putchar('\n');
 
 	return (0);
 }

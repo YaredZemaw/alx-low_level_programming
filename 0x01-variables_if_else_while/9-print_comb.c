@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Print single digit numbers in the formart
+ * main - Entry point
  *
- * Description: Sepaeated by commas
- * Return: Always(0) Success
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i;
-
-	for (i = 48; i < 58; i++)
-	{
-		putchar(i);
-	}
-	if (i != 57)
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	putchar('\n');
-
-	return (0);
+int m = '0';
+while (m <= '9')
+{
+putchar(m);
+if (m != '9')
+{
+putchar(',');
+putchar(' ');
+}
+else
+{
+putchar('\n');
+}
+m++;
+}
+return (0);
 }

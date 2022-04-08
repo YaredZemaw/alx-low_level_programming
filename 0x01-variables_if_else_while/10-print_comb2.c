@@ -1,35 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Print 2 digit numbers
+ * main - Entry point
  *
- * Description: Should appear in the formart provided
- * Return: Always(0) Success
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int a, b;
-
-	for (a = 48; a < 58; a++)
-	{
-		for (b = 48; b < 58; b++)
-		{
-			putchar(a);
-			putchar(b);
-
-		if (a == 57 && b == 57)
-		{
-			break;
-		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		}
-	}
-	putchar ('\n');
-
-	return (0);
+int num1 = '0';
+int num2 = '0';
+while (num1 <= '9')
+{
+while (num2 <= '9')
+{
+putchar(num1);
+putchar(num2);
+if ((num1 != '9') || (num2 != '9'))
+{
+putchar(',');
+putchar(' ');
+}
+num2++;
+}
+num2 = '0';
+num1++;
+}
+putchar('\n');
+return (0);
 }
