@@ -1,35 +1,31 @@
+
 #include <stdio.h>
 
 /**
- * main - main - two pairs of numbers that do not repeat
+ * main - prints all possible combinations of two two-digit numbers.
  *
- * Return (0)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i, j;
 
-	for (j = 0; j <= 99; j++)
-	{
-		for (i = j; i <= 99; i++)
-		{
-			if (i != j)
-			{
-				putchar(j / 10 + 48);
-				putchar(j % 10 + 48);
-				putchar(' ');
-				putchar(i / 10 + 48);
-				putchar(i % 10 + 48);
-			}
-			if (j * 100 + i != 9899)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
+	for (i = 0; i != 100; i++)
 
+		for (j = 0; j != 100; j++)
+			if (j > i)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(32);
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(32);
+				}
+			}
+	putchar('\n');
 	return (0);
 }
