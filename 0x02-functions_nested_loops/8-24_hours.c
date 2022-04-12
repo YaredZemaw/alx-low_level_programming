@@ -1,32 +1,31 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * jack_bauer - Prints the minutes of a day
- * 24 the remake tho
- * Return: no return
+ * jack_bauer -prints every minute of the day
+ *
+ * Return: Always 0.
  */
-void jack_bauer(void)
-{
-int a, b, c, d;
 
-for (a = 48; a <= 50; a++)
+void jack_bauer(void)
+
 {
-for (b = 48; b <= 57; b++)
+int a;
+int b;
+
+for (a = 0; a <= 23; a++)
 {
-for (c = 48; c <= 53; c++)
+for (b = 0; b <= 59; b++)
 {
-for (d = 48; d <= 57; d++)
-{
-if (a >= 50 && b >= 52)
-break;
-_putchar(a);
-_putchar(b);
-_putchar(58);
-_putchar(c);
-_putchar(d);
-_putchar('\n');
+_putchar (a / 10 + '0');
+_putchar (a % 10 + '0');
+_putchar (':');
+_putchar (b / 10 + '0');
+_putchar (b % 10 + '0');
+_putchar ('\n');
+
 }
+
+
 }
-}
-}
+
 }

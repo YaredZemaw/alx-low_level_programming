@@ -1,19 +1,27 @@
-#include "holberton.h"
-/**
- *print_alphabet_x10 - this function will list lower alphabet ten times.
- */
+#include "main.h"
 
+/**
+ * print_alphabet_x10 - print alphabet
+ *
+ * Return: Always 0.
+ */
 void print_alphabet_x10(void)
 {
-int a;
-char b;
-while (a < 10)
+int alphabet;
+int count;
+
+
+count = 0;
+while (count < 10)
 {
-for (b = 'a'; b <= 'z'; b++)
+for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
 {
-_putchar(b);
+_putchar(alphabet);
 }
+
+count++;
 _putchar('\n');
-a++;
 }
+
+
 }
